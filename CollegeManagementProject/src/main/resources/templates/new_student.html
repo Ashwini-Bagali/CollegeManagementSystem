@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Add a new Student</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	crossorigin="anonymous" />
+
+<style>
+body {
+	margin-top: 100px;
+	background-color: #ccbfd6;
+	font-family: "Brush Script MT", cursive;
+	font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div align="center">
+        <h1>Add a New Student</h1>
+        <br />
+        <form action="#" th:action="@{/savestudent}" th:object="${student}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" th:field="*{name}" /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" th:field="*{email}" /></td>
+                </tr>
+                <tr>
+                    <td>Course:</td>
+                    <td><input type="text" th:field="*{course}" /></td>
+                </tr>     
+                 <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" th:field="*{phno}" /></td>
+                </tr>                        
+                <tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
