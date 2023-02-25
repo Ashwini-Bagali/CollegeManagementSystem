@@ -1,9 +1,0 @@
-level1,level2,ci/nci,reason
-Hospital Charges,Medical Report Fee,NCI,MEDICAL_REPORT_FEE
-Hospital Charges,Food & Beverages,NCI,AMOUNT_NOT_PAYABLE
-Doctor Charges,Ambulance,CI
-Hospital Charges,Ambulance,CI
-Hospital Charges,Radiology / Diagnostic Imaging,CI
-ICU,ICU/CCU,CI
-Room and Board,Room and Board,CI
-
